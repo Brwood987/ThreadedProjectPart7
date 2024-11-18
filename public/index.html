@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TravelExperts Products</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>TravelExperts Products</h1>
+
+    <!-- Display Products -->
+    <section id="products-section">
+        <h2>All Products</h2>
+        <button id="load-products">Load Products</button>
+        <ul id="products-list"></ul>
+    </section>
+
+    <!-- Add Product -->
+    <section id="add-product-section">
+        <h2>Add a New Product</h2>
+        <form id="add-product-form">
+            <input type="text" id="product-name" placeholder="Product Name" required>
+            <button type="submit">Add Product</button>
+        </form>
+    </section>
+
+    <!-- Update Product -->
+    <section id="update-product-section">
+        <h2>Update a Product</h2>
+        <form id="update-product-form">
+            <input type="number" id="update-product-id" placeholder="Product ID" required>
+            <input type="text" id="update-product-name" placeholder="New Product Name" required>
+            <button type="submit">Update Product</button>
+        </form>
+    </section>
+
+    <!-- Delete Product -->
+    <section id="delete-product-section">
+        <h2>Delete a Product</h2>
+        <form id="delete-product-form">
+            <input type="number" id="delete-product-id" placeholder="Product ID" required>
+            <button type="submit">Delete Product</button>
+        </form>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
