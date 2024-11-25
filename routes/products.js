@@ -1,3 +1,5 @@
+// Written by Ben Wood
+
 const express = require('express');
 const router = express.Router();
 const db = require('../config/db'); //Import the database connection

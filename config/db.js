@@ -1,3 +1,4 @@
+// Written by Ben Wood
 
 const mysql = require('mysql2');
 require('dotenv').config();

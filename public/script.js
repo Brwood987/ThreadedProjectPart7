@@ -1,3 +1,5 @@
+// Written by Ben Wood
+
 // Base URL for the API
 const apiUrl = 'http://localhost:3000/products';
 
