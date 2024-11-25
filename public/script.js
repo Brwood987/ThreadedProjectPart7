@@ -16,7 +16,6 @@ function validateInput(input, pattern) {
     return pattern.test(input);
 }
 
-// Example patterns
 const idPattern = /^\d+$/; // Numeric ID (e.g., "123")
 const namePattern = /^[a-zA-Z0-9\s]+$/; // Alphanumeric and spaces (e.g., "Product Name")
 
