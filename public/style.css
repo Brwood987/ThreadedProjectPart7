@@ -1,18 +1,107 @@
+/*Written by Ben Wood*/
+
+/* Light Mode (default) */
 body {
     font-family: Arial, sans-serif;
-    margin: 20px;
     line-height: 1.6;
+    margin: 0;
+    padding: 20px;
+    background-color: #ffffff;
+    color: #333333; 
 }
 
-h1, h2 {
-    color: #333;
+
+button {
+    background-color: #28a745; 
+    color: #ffffff; 
+    border: none;
+    padding: 10px 15px;
+    font-size: 1em;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
-form {
+/* Light Mode Input Field Styling */
+body input[type="text"], 
+body input[type="number"] {
+    background-color: #ffffff;
+    color: #333333; 
+    border: 1px solid #cccccc; 
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1); 
+}
+
+body input[type="text"]:focus, 
+body input[type="number"]:focus {
+    border-color: #28a745; 
+    box-shadow: 0 0 5px #28a745; 
+    outline: none; 
+}
+
+/* Dark Mode Input Field Styling */
+body.dark-mode input[type="text"], 
+body.dark-mode input[type="number"] {
+    background-color: #1e1e1e; 
+    color: #ffffff; 
+    border: 1px solid #555555; 
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5); 
+}
+
+body.dark-mode input[type="text"]:focus, 
+body.dark-mode input[type="number"]:focus {
+    border-color: #28a745; 
+    box-shadow: 0 0 5px #28a745; 
+    outline: none; 
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+/* Dark Mode */
+body.dark-mode {
+    background-color: #121212;
+    color: #e0e0e0; 
+}
+
+body.dark-mode .container {
+    background: #1e1e1e; 
+}
+
+body.dark-mode button {
+    background-color: #4caf50; 
+    color: #ffffff;
+    border: 1px solid #3e8e41; 
+}
+
+body.dark-mode button:hover {
+    background-color: #45a049; 
+}
+
+body.dark-mode input[type="text"] {
+    background-color: #1e1e1e; 
+    color: #ffffff; 
+    border: 1px solid #555555;
+}
+
+body.dark-mode #products-list li {
+    background: #1e1e1e; 
+    border: 1px solid #333333;
+}
+
+/* Dark Mode Button */
+#dark-mode-toggle {
+    background-color: #28a745; /* Match other buttons */
+    color: #ffffff; 
+    border: none;
+    padding: 10px 15px;
+    font-size: 1em;
+    border-radius: 5px;
+    cursor: pointer;
     margin-bottom: 20px;
+    transition: background-color 0.3s ease;
 }
 
-input, button {
-    padding: 10px;
-    margin: 5px;
+#dark-mode-toggle:hover {
+    background-color: #218838;
 }
